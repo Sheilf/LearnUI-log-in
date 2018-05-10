@@ -1,0 +1,168 @@
+html{
+  background-color: rgba(0, 6, 35, 1);
+  font-family: 'Ubuntu', sans;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+canvas{
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+
+#react-root{
+  color: white;
+  line-spacing: 1.15;
+  /*global to this page */
+}
+
+#LoginPage{
+  /* Local  Parent container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#Banner{
+  /*Content at top*/
+  text-align: center;
+  box-sizing: border-box;
+  padding: 15px;
+
+
+}
+
+#Login{
+  /*Parent to middle/main area*/
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 450px;
+}
+
+#UserPortal{
+  /*Parent of descriptions*/
+  
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.85);
+  border: 1px solid white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+  
+  border-radius: 25px;
+  width: 50%;
+  padding: 75px;
+}
+
+#Role{
+  /* Teacher, Student container */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  width: 30%;
+
+  margin-left: 25px;
+  
+
+  
+  
+
+}
+#Teacher{
+border: 1px solid  #D3A841;
+}
+#Teacher:hover{
+  border: 4px solid #D3A841;
+  background-color: rgba(159, 139, 111,0.65);
+}
+#Student{
+  margin-top: 25px;
+  border: 1px solid #055829;
+}
+#Student:hover{
+  border: 4px solid #055829;
+  background-color: rgba(77, 165, 115,0.65);
+
+}
+
+.role-buttons{
+  transition: 0.23s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  height: 125px;
+  width: 125px;
+  background-color: rgba(0,0,0,0.85);
+ 
+  border-radius: 50%;
+
+
+  
+  
+}
+.role-buttons:hover{
+    transform: scale(1.05);
+}
+
+#display-default-portal{
+  box-sizing: border-box;
+  padding: 10%;
+  transition: 0.75s all ease-in-out;
+  z-index: 0;
+
+  height: 95%;
+  text-align: center;
+  
+}
+#display-role-portal{
+   
+  position: absolute;
+   transition: 1.5s all ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  
+
+  
+    width: 100%;
+    height: 95%;
+
+}
+
+#roleList{
+ 
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  
+}
+#role-header{
+  margin-left: 25px;
+}
+
+#input-box{
+  text-align: center;
+
+}
